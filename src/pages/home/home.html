@@ -1,9 +1,6 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
-    <ion-title>
-      Agenda Escolar
-    </ion-title>
-    <button ion-button menuToggle>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     
@@ -12,10 +9,28 @@
 
 <ion-content padding>
   
-</ion-content>
+</ion-content> -->
 
+<ion-content padding center text-center>
+  <ion-title>
+    Agenda Escolar
+  </ion-title>
 
-<ion-content>
-    <img src="./assets/imgs/criancasHome.png">
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label fixed>Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <button ion-button full (click)="login()">Login</button>
+  <button ion-button full color="light" (click)="goRegister()">Registrar</button>
 </ion-content>
 

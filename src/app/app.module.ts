@@ -10,6 +10,8 @@ import { CalendarioPage } from '../pages/calendario/calendario';
 import { FalePage } from '../pages/fale/fale';
 import { AlunoPage } from '../pages/aluno/aluno';
 import { AjudaPage } from '../pages/ajuda/ajuda';
+import { RegistroPage } from '../pages/registro/registro';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { AjudaPage } from '../pages/ajuda/ajuda';
     CalendarioPage,
     FalePage,
     AlunoPage,
-    AjudaPage
+    AjudaPage,
+    RegistroPage
+    
 
   ],
   imports: [
@@ -32,7 +36,9 @@ import { AjudaPage } from '../pages/ajuda/ajuda';
     CalendarioPage,
     FalePage,
     AlunoPage,
-    AjudaPage
+    AjudaPage,
+    RegistroPage
+  
   ],
   providers: [
     StatusBar,
