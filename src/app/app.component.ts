@@ -8,6 +8,7 @@ import { CalendarioPage } from '../pages/calendario/calendario';
 import { AjudaPage } from '../pages/ajuda/ajuda';
 import { FalePage } from '../pages/fale/fale';
 import { AlunoPage } from '../pages/aluno/aluno';
+import { LoginPage } from '../pages/login/login';
 @Component({
   templateUrl: 'app.html'
 })
@@ -18,10 +19,10 @@ export class MyApp { //abrirá página correspondente
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
  
-      this.rootPage = HomePage;
+      this.rootPage = LoginPage;
       this.pages = [
-        {titulo: 'Home', component: HomePage, icon: 'home'},
-        {titulo: 'Calendário', component: CalendarioPage, icon: 'calendar'},
+        {titulo: 'Calendário', component: HomePage, icon: 'calendar'},
+        {titulo: 'Adicionar Eventos', component: CalendarioPage, icon: 'add-circle'},
         {titulo: 'Fale com Professor', component: FalePage, icon: 'chatbubbles'},
         {titulo: 'Aluno', component: AlunoPage, icon: 'person'},
         {titulo: 'Ajuda', component: AjudaPage, icon: 'help-circle'},

@@ -1,14 +1,12 @@
 <ion-menu [content]="nav">
     <ion-content>
-        <img src="/assets/imgs/agenda.png" alt="">
+            <img src="/assets/imgs/agenda.png" alt="">
+
             <ion-header>
-                    <ion-toolbar>
-                        <ion-title></ion-title>
-                    </ion-toolbar>
+
                 </ion-header>
                 <ion-content>
-                    <ion-list >
-                        
+                    <ion-list>
                         <button ion-item *ngFor="let page of pages" (click)="goToPage(page.component)" menuClose>
                                 <ion-icon item-left name="{{ page.icon }}"></ion-icon>
                                 {{ page.titulo }}
